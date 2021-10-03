@@ -14,3 +14,7 @@ The following footage shows a demonstration where the robot follows a circle pat
   <img width=25% height=25% src="https://github.com/AdamPurnomo/C3-Robot-Arm-Control/blob/main/Images/demo.gif?raw=true">
 </p>
 
+<p align="center">
+  <img width=25% height=25% src="https://github.com/AdamPurnomo/C3-Robot-Arm-Control/blob/main/Images/circle.PNG?raw=true">
+</p>
+
