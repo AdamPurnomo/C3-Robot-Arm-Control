@@ -11,6 +11,6 @@ DH-parameters are used to solve both forward and inverse kinematic. The DH-Param
 ## Robot Demonstration
 The following footage shows a demonstration where the robot follows a circle path with resolved motion rate control method.
 <p align="center">
-  <img width=75% height=75% src="https://github.com/AdamPurnomo/C3-Robot-Arm-Control/blob/main/Images/demo.gif?raw=true">
+  <img width=25% height=25% src="https://github.com/AdamPurnomo/C3-Robot-Arm-Control/blob/main/Images/demo.gif?raw=true">
 </p>
 
