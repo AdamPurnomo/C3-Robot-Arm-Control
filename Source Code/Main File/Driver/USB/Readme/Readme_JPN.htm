@@ -1,0 +1,990 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=shift_jis">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./Readme_JPN.files/filelist.xml">
+<link rel=Edit-Time-Data href="./Readme_JPN.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>サーボパックUSBドライバ　インストール方法</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>（電技C3）</o:Author>
+  <o:LastAuthor>安川電機</o:LastAuthor>
+  <o:Revision>59</o:Revision>
+  <o:TotalTime>967</o:TotalTime>
+  <o:Created>2007-05-18T02:21:00Z</o:Created>
+  <o:LastSaved>2010-11-18T08:36:00Z</o:LastSaved>
+  <o:Pages>11</o:Pages>
+  <o:Words>477</o:Words>
+  <o:Characters>2723</o:Characters>
+  <o:Company>（株）安川電機</o:Company>
+  <o:Lines>22</o:Lines>
+  <o:Paragraphs>5</o:Paragraphs>
+  <o:CharactersWithSpaces>3344</o:CharactersWithSpaces>
+  <o:Version>9.3821</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:PunctuationKerning/>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:"ＭＳ 明朝";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	mso-font-alt:"MS Mincho";
+	mso-font-charset:128;
+	mso-generic-font-family:roman;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+@font-face
+	{font-family:"ＭＳ ゴシック";
+	panose-1:2 11 6 9 7 2 5 8 2 4;
+	mso-font-alt:"MS Gothic";
+	mso-font-charset:128;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+@font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:"ＭＳ Ｐゴシック";
+	panose-1:2 11 6 0 7 2 5 8 2 4;
+	mso-font-charset:128;
+	mso-generic-font-family:modern;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+@font-face
+	{font-family:"\@ＭＳ ゴシック";
+	panose-1:2 11 6 9 7 2 5 8 2 4;
+	mso-font-charset:128;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+@font-face
+	{font-family:"\@ＭＳ Ｐゴシック";
+	panose-1:2 11 6 0 7 2 5 8 2 4;
+	mso-font-charset:128;
+	mso-generic-font-family:modern;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+@font-face
+	{font-family:"\@ＭＳ 明朝";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	mso-font-charset:128;
+	mso-generic-font-family:roman;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Century;
+	mso-fareast-font-family:"ＭＳ 明朝";
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+h1
+	{mso-style-next:標準;
+	margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"ＭＳ ゴシック";
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:normal;}
+h4
+	{margin-right:0mm;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0mm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:"ＭＳ Ｐゴシック";
+	font-weight:bold;}
+h6
+	{margin-right:0mm;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0mm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:6;
+	font-size:7.5pt;
+	font-family:"ＭＳ 明朝";
+	font-weight:bold;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{margin-right:0mm;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0mm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:9;
+	font-size:12.0pt;
+	font-family:"ＭＳ Ｐゴシック";
+	mso-bidi-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{margin-right:0mm;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0mm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"ＭＳ Ｐゴシック";
+	mso-bidi-font-family:"Times New Roman";}
+p.6, li.6, div.6
+	{mso-style-name:6;
+	margin-right:0mm;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0mm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"ＭＳ Ｐゴシック";
+	mso-bidi-font-family:"Times New Roman";}
+ /* Page Definitions */
+@page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:30.0mm 79.4pt 79.4pt 79.4pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:18.0pt;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:186255525;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1782557926 -1714260794 67698711 67698705 67698703 67698711 67698705 67698703 67698711 67698705;}
+@list l0:level1
+	{mso-level-text:"\(%1\)";
+	mso-level-tab-stop:25.5pt;
+	mso-level-number-position:left;
+	margin-left:25.5pt;
+	text-indent:-25.5pt;}
+@list l1
+	{mso-list-id:1236278794;
+	mso-list-type:hybrid;
+	mso-list-template-ids:996156134 -1714260794 67698711 67698705 67698703 67698711 67698705 67698703 67698711 67698705;}
+@list l1:level1
+	{mso-level-text:"\(%1\)";
+	mso-level-tab-stop:25.5pt;
+	mso-level-number-position:left;
+	margin-left:25.5pt;
+	text-indent:-25.5pt;}
+@list l2
+	{mso-list-id:1807777515;
+	mso-list-type:hybrid;
+	mso-list-template-ids:111425038 1540408692 -69560926 597835960 67698703 67698711 67698705 67698703 67698711 67698705;}
+@list l2:level1
+	{mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+@list l2:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:39.0pt;
+	mso-level-number-position:left;
+	margin-left:39.0pt;
+	text-indent:-18.0pt;
+	font-family:"ＭＳ Ｐゴシック";
+	mso-bidi-font-family:"Times New Roman";}
+@list l2:level3
+	{mso-level-text:"\(%3\)";
+	mso-level-tab-stop:62.25pt;
+	mso-level-number-position:left;
+	margin-left:62.25pt;
+	text-indent:-20.25pt;}
+@list l3
+	{mso-list-id:1947156320;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1344053976 -1714260794 67698711 67698705 67698703 67698711 67698705 67698703 67698711 67698705;}
+@list l3:level1
+	{mso-level-text:"\(%1\)";
+	mso-level-tab-stop:25.5pt;
+	mso-level-number-position:left;
+	margin-left:25.5pt;
+	text-indent:-25.5pt;}
+@list l4
+	{mso-list-id:2010522779;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-317013390 -1714260794 67698711 67698705 67698703 67698711 67698705 67698703 67698711 67698705;}
+@list l4:level1
+	{mso-level-text:"\(%1\)";
+	mso-level-tab-stop:25.5pt;
+	mso-level-number-position:left;
+	margin-left:25.5pt;
+	text-indent:-25.5pt;}
+ol
+	{margin-bottom:0mm;}
+ul
+	{margin-bottom:0mm;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1173"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=JA link=blue vlink=purple style='tab-interval:42.0pt;text-justify-trim:
+punctuation'>
+
+<div class=Section1 style='layout-grid:18.0pt'>
+
+<p class=MsoNormal align=center style='text-align:center;mso-line-height-alt:
+0pt'><u><span style='font-size:13.5pt;font-family:"ＭＳ ゴシック"'>サーボパック<span
+lang=EN-US>USBドライバ　インストール方法<o:p></o:p></span></span></u></p>
+
+<p class=MsoNormal style='mso-line-height-alt:0pt'><span lang=EN-US
+style='font-family:"ＭＳ ゴシック";mso-font-kerning:0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-line-height-alt:0pt'><span style='font-family:
+"ＭＳ ゴシック";mso-font-kerning:0pt'>ここでは、サーボパックの<span lang=EN-US>USBドライバソフトのインストール方法について記述しています。<o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='mso-line-height-alt:0pt'><span style='font-family:
+"ＭＳ ゴシック";mso-font-kerning:0pt'>サーボパックの<span lang=EN-US>USBドライバは、SigmaWin+のインストーラではインストールされません。<o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='mso-line-height-alt:0pt'><span lang=EN-US
+style='font-family:"ＭＳ ゴシック";mso-font-kerning:0pt'>USB接続でSigmaWin+をご使用の場合は、下記手順に従いドライバのインストールを行ってください。<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-line-height-alt:0pt'><span lang=EN-US
+style='font-family:"ＭＳ ゴシック";mso-font-kerning:0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-line-height-alt:0pt'><span style='font-family:
+"ＭＳ ゴシック";mso-font-kerning:0pt'>オペレーティングシステム<span lang=EN-US>(以下、OS)によってインストールの方法が異なりますので、ご使用のOSをご確認ください。<o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='mso-line-height-alt:0pt'><span lang=EN-US
+style='font-family:"ＭＳ ゴシック";mso-font-kerning:0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-line-height-alt:0pt'><span style='font-family:
+"ＭＳ ゴシック";mso-font-kerning:0pt'>また、<span lang=EN-US>SigmaWin+ のインストールフォルダを“C:￥Program
+Files￥SigmaIDE”，CD-ROMドライブをDドライブとして説明します。ご使用のパソコンのドライブ名に合わせて読み替えてください。<o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='mso-line-height-alt:0pt'><span lang=EN-US
+style='mso-fareast-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-line-height-alt:0pt'><span lang=EN-US
+style='font-family:"ＭＳ ゴシック"'><a href="#_ドライバのインストール">1.ドライバのインストール</a></span><span
+lang=EN-US style='font-family:"ＭＳ ゴシック";mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:10.5pt;mso-char-indent-count:1.0;
+mso-char-indent-size:10.5pt;mso-line-height-alt:0pt;mso-char-indent-size:10.5pt'><span
+lang=EN-US style='mso-bidi-font-size:10.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:
+"ＭＳ Ｐゴシック";color:blue'><a href="#_■_Windows7/Vistaにインストールする場合">■ Windows7/Vista
+にインストールする場合</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:10.5pt;mso-char-indent-count:1.0;
+mso-char-indent-size:10.5pt;mso-line-height-alt:0pt;mso-char-indent-size:10.5pt'><span
+lang=EN-US style='mso-bidi-font-size:10.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:
+"ＭＳ Ｐゴシック";color:blue'><a href="#_■_WindowsXPにインストールする場合_1">■ WindowsXP にインストールする場合</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:10.5pt;mso-char-indent-count:1.0;
+mso-char-indent-size:10.5pt;mso-line-height-alt:0pt;mso-char-indent-size:10.5pt'><span
+lang=EN-US style='mso-bidi-font-size:10.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:
+"ＭＳ Ｐゴシック";color:blue'><a href="#_■_Windows2000にインストールする場合">■ Windows2000にインストールする場合</a></span><span
+lang=EN-US style='font-family:"ＭＳ ゴシック";color:blue;mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-line-height-alt:0pt'><span lang=EN-US
+style='font-family:"ＭＳ ゴシック"'><a href="#_インストール状況の確認">2.インストール状況の確認</a></span><span
+lang=EN-US style='font-family:"ＭＳ ゴシック";mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-line-height-alt:0pt'><span lang=EN-US
+style='font-family:"ＭＳ ゴシック"'><a href="#_デバイスの取り外し">3.デバイスの取り外し</a></span><span
+lang=EN-US style='font-family:"ＭＳ ゴシック";mso-fareast-font-family:"ＭＳ 明朝";
+mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-line-height-alt:0pt'><span lang=EN-US
+style='font-family:"ＭＳ ゴシック";color:blue;mso-font-kerning:0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-line-height-alt:0pt'><span lang=EN-US
+style='font-family:"ＭＳ ゴシック";color:blue;mso-font-kerning:0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<span lang=EN-US style='font-size:12.0pt;font-family:Arial;mso-fareast-font-family:
+"ＭＳ ゴシック";mso-bidi-font-family:"Times New Roman";mso-font-kerning:1.0pt;
+mso-ansi-language:EN-US;mso-fareast-language:JA;mso-bidi-language:AR-SA'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<h1 style='margin-left:18.0pt;text-indent:-18.0pt;mso-list:l2 level1 lfo2;
+tab-stops:list 18.0pt'><a name="_ドライバのインストール"></a><a
+name="_■_WindowsXPにインストールする場合"></a><a name="_1.ドライバのインストール"></a><![if !supportLists]><span
+lang=EN-US>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-family:"ＭＳ ゴシック";mso-ascii-font-family:
+Arial;mso-hansi-font-family:Arial'>ドライバのインストール</span></h1>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<h4 style='margin:0mm;margin-bottom:.0001pt;mso-line-height-alt:0pt'><a
+name="_■_Windows7/Vistaにインストールする場合"></a><span style='font-size:10.5pt;
+mso-bidi-font-size:12.0pt;font-family:"ＭＳ ゴシック";color:blue'>■ <span lang=EN-US>Windows7/Vistaにインストールする場合<o:p></o:p></span></span></h4>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:27.0pt;
+margin-bottom:.0001pt;text-indent:-27.0pt;mso-line-height-alt:0pt;mso-list:
+l2 level3 lfo2;tab-stops:list 27.0pt 62.25pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:7.5pt;font-family:"ＭＳ ゴシック";
+font-weight:normal'>(1)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-size:10.0pt;mso-bidi-font-size:7.5pt;
+font-family:"ＭＳ ゴシック";font-weight:normal'>パソコンを立ち上げ、<span lang=EN-US>Windows7またはWindowsVistaを起動します。<o:p></o:p></span></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:27.0pt;
+margin-bottom:.0001pt;text-indent:-27.0pt;mso-line-height-alt:0pt;mso-list:
+l2 level3 lfo2;tab-stops:list 27.0pt 62.25pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:7.5pt;font-family:"ＭＳ ゴシック";
+font-weight:normal'>(2)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-size:10.0pt;mso-bidi-font-size:7.5pt;
+font-family:"ＭＳ ゴシック";font-weight:normal'>サーボパックとパソコンを<span lang=EN-US>USBケーブルで接続して、サーボパックの電源をオンします。<o:p></o:p></span></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:27.0pt;
+margin-bottom:.0001pt;text-indent:-27.0pt;mso-line-height-alt:0pt;mso-list:
+l2 level3 lfo2;tab-stops:list 27.0pt 62.25pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:7.5pt;font-family:"ＭＳ ゴシック";
+font-weight:normal'>(3)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-size:10.0pt;mso-bidi-font-size:7.5pt;
+font-family:"ＭＳ ゴシック";font-weight:normal'>「ドライバが見つかりません。」のメッセージが表示されたら、<span
+lang=EN-US>[閉じる]ボタンを選択します。<o:p></o:p></span></span></h6>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1102" type="#_x0000_t75" style='width:315pt;
+ height:150pt'>
+ <v:imagedata src="./Readme_JPN.files/image001.jpg" o:title="1_ドライバ"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=420 height=200
+src="./Readme_JPN.files/image002.jpg" v:shapes="_x0000_i1102"><![endif]></span><span
+lang=EN-US style='mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:27.0pt;
+margin-bottom:.0001pt;text-indent:-27.0pt;mso-line-height-alt:0pt;mso-list:
+l2 level3 lfo2;tab-stops:list 27.0pt 62.25pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:7.5pt;font-family:"ＭＳ ゴシック";
+font-weight:normal'>(4)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-size:10.0pt;mso-bidi-font-size:7.5pt;
+font-family:"ＭＳ ゴシック";font-weight:normal'>「コンピュータ」→「プロパティ」→「デバイスマネージャ」を選択します。<span
+lang=EN-US><o:p></o:p></span></span></h6>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US><!--[if gte vml 1]><v:shape
+ id="_x0000_i1026" type="#_x0000_t75" style='width:315pt;height:249.75pt'>
+ <v:imagedata src="./Readme_JPN.files/image003.jpg" o:title="2_デバイスマネージャー"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=420 height=333
+src="./Readme_JPN.files/image004.jpg" v:shapes="_x0000_i1026"><![endif]></span><span
+lang=EN-US style='mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:27.0pt;
+margin-bottom:.0001pt;text-indent:-27.0pt;mso-line-height-alt:0pt;mso-list:
+l2 level3 lfo2;tab-stops:list 27.0pt 62.25pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:7.5pt;font-family:"ＭＳ ゴシック";
+font-weight:normal'>(5)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-size:10.0pt;mso-bidi-font-size:7.5pt;
+font-family:"ＭＳ ゴシック";font-weight:normal'>「<span lang=EN-US>YASKAWA SIGMA
+SERIES」を選択し、右クリック→「ドライバ ソフトウェアの更新」を選択します。<o:p></o:p></span></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:27.0pt;
+margin-bottom:.0001pt;text-indent:-27.0pt;mso-line-height-alt:0pt;mso-list:
+l2 level3 lfo2;tab-stops:list 27.0pt 62.25pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:7.5pt;font-family:"ＭＳ ゴシック";
+font-weight:normal'>(6)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-size:10.0pt;mso-bidi-font-size:7.5pt;
+font-family:"ＭＳ ゴシック";font-weight:normal'>「コンピュータを参照してドライバ ソフトウェアを更新します」を選択します。<span
+lang=EN-US><o:p></o:p></span></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:27.0pt;
+margin-bottom:.0001pt;text-indent:-27.0pt;mso-line-height-alt:0pt;mso-list:
+l2 level3 lfo2;tab-stops:list 27.0pt 62.25pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:7.5pt;font-family:"ＭＳ ゴシック";
+font-weight:normal'>(7)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-size:10.0pt;mso-bidi-font-size:7.5pt;
+font-family:"ＭＳ ゴシック";font-weight:normal'>「サブフォルダも検索する」にチェックを入れて、“<span
+lang=EN-US>C:\Program Files\SigmaIDE\SigmaWinPlusJ\Driver\USB”（SigmaWin+がインストール済の場合）、または“D:\Driver\USB”（CD-ROMからの場合）を指定して、[次へ]ボタンを選択します。<o:p></o:p></span></span></h6>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US><!--[if gte vml 1]><v:shape
+ id="_x0000_i1027" type="#_x0000_t75" style='width:315pt;height:257.25pt'>
+ <v:imagedata src="./Readme_JPN.files/image005.jpg" o:title="4_ドライバ更新"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=420 height=343
+src="./Readme_JPN.files/image006.jpg" v:shapes="_x0000_i1027"><![endif]></span><span
+lang=EN-US style='mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:27.0pt;
+margin-bottom:.0001pt;text-indent:-27.0pt;mso-line-height-alt:0pt;mso-list:
+l2 level3 lfo2;tab-stops:list 27.0pt 62.25pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:7.5pt;font-family:"ＭＳ ゴシック";
+font-weight:normal'>(8)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-size:10.0pt;mso-bidi-font-size:7.5pt;
+font-family:"ＭＳ ゴシック";font-weight:normal'>セキュリティのエラーが表示される場合、「このドライバーソフトウェアをインストールします」を選択します。<span
+lang=EN-US><o:p></o:p></span></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:27.0pt;
+margin-bottom:.0001pt;text-indent:-27.0pt;mso-line-height-alt:0pt;mso-list:
+l2 level3 lfo2;tab-stops:list 27.0pt 62.25pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:7.5pt;font-family:"ＭＳ ゴシック";
+font-weight:normal'>(9)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-size:10.0pt;mso-bidi-font-size:7.5pt;
+font-family:"ＭＳ ゴシック";font-weight:normal'>必要なファイルのコピーが始まりますので、終了するまでしばらくお待ちください。<span
+lang=EN-US><o:p></o:p></span></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:27.0pt;
+margin-bottom:.0001pt;text-indent:-27.0pt;mso-line-height-alt:0pt;mso-list:
+l2 level3 lfo2;tab-stops:list 27.0pt 62.25pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:7.5pt;font-family:"ＭＳ ゴシック";
+font-weight:normal'>(10)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-size:10.0pt;mso-bidi-font-size:7.5pt;
+font-family:"ＭＳ ゴシック";font-weight:normal'>コピーが終了したら、インストールの完了が通知されますので、<span
+lang=EN-US>[閉じる]ボタンを選択します。<o:p></o:p></span></span></h6>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US><!--[if gte vml 1]><v:shape
+ id="_x0000_i1028" type="#_x0000_t75" style='width:315pt;height:257.25pt'>
+ <v:imagedata src="./Readme_JPN.files/image007.jpg" o:title="6_更新終了"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=420 height=343
+src="./Readme_JPN.files/image008.jpg" v:shapes="_x0000_i1028"><![endif]></span><span
+lang=EN-US style='mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:27.0pt;
+margin-bottom:.0001pt;text-indent:-27.0pt;mso-line-height-alt:0pt;mso-list:
+l2 level3 lfo2;tab-stops:list 27.0pt 62.25pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:7.5pt;font-family:"ＭＳ ゴシック";
+font-weight:normal'>(11)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-size:10.0pt;mso-bidi-font-size:7.5pt;
+font-family:"ＭＳ ゴシック";font-weight:normal'>これでドライバーのインストールは終了しました。<span
+lang=EN-US><o:p></o:p></span></span></h6>
+
+<h4 style='margin:0mm;margin-bottom:.0001pt;mso-line-height-alt:0pt'><span
+lang=EN-US style='font-size:10.5pt;mso-bidi-font-size:10.0pt;font-family:"ＭＳ ゴシック";
+mso-bidi-font-family:"ＭＳ Ｐゴシック";color:blue'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></h4>
+
+<span lang=EN-US style='font-size:12.0pt;font-family:"ＭＳ Ｐゴシック";mso-bidi-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:JA;mso-bidi-language:
+AR-SA'><br clear=all style='mso-special-character:line-break;page-break-before:
+always'>
+</span>
+
+<h4 style='margin:0mm;margin-bottom:.0001pt;mso-line-height-alt:0pt'><span
+lang=EN-US style='font-size:10.5pt;mso-bidi-font-size:10.0pt;font-family:"ＭＳ ゴシック";
+mso-bidi-font-family:"ＭＳ Ｐゴシック";color:blue'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></h4>
+
+<h4 style='margin:0mm;margin-bottom:.0001pt;mso-line-height-alt:0pt'><a
+name="_■_WindowsXPにインストールする場合_1"></a><span style='font-size:10.5pt;mso-bidi-font-size:
+10.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ Ｐゴシック";color:blue'>■<span
+lang=EN-US> WindowsXPにインストールする場合</span></span><span lang=EN-US
+style='font-size:10.5pt;mso-bidi-font-size:12.0pt;font-family:"ＭＳ ゴシック";
+mso-bidi-font-family:"ＭＳ Ｐゴシック";color:blue'><o:p></o:p></span></h4>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l3 level1 lfo4;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ Ｐゴシック";
+font-weight:normal'>(1)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-size:10.0pt;font-family:"ＭＳ ゴシック";
+mso-bidi-font-family:"ＭＳ Ｐゴシック";font-weight:normal'>パソコンを立ち上げ<span lang=EN-US>
+WindowsXP を起動します。<o:p></o:p></span></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l3 level1 lfo4;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'>(2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ Ｐゴシック";
+font-weight:normal'>サーボパックとパソコンを<span lang=EN-US>USBケーブルで接続して、サーボパックの電源をオンします。</span></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:l3 level1 lfo4;tab-stops:
+list 25.5pt'><![if !supportLists]><span lang=EN-US style='font-size:10.0pt;
+font-family:"ＭＳ ゴシック";font-weight:normal'>(3)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-size:10.0pt;font-family:"ＭＳ ゴシック";
+mso-bidi-font-family:"ＭＳ Ｐゴシック";font-weight:normal'>「新しいハードウェアの検出ウィザード」が表示されたら，「一覧または特定の場所からインストールする<span
+lang=EN-US>(詳細)」が指定されていることを確認して，[次へ]ボタンを選択します。</span></span><span lang=EN-US
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:25.5pt;mso-line-height-alt:0pt'><span lang=EN-US><!--[if gte vml 1]><v:shape
+ id="_x0000_i1029" type="#_x0000_t75" style='width:316.5pt;height:199.5pt'
+ o:allowoverlap="f">
+ <v:imagedata src="./Readme_JPN.files/image009.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=422 height=266
+src="./Readme_JPN.files/image010.jpg" v:shapes="_x0000_i1029"><![endif]></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:l3 level1 lfo4;tab-stops:
+list 25.5pt'><![if !supportLists]><span lang=EN-US style='font-size:10.0pt;
+font-family:"ＭＳ ゴシック";font-weight:normal'>(4)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;font-family:
+"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ Ｐゴシック";font-weight:normal'>SigmaWin+のインストールディスクをCD-ROMドライブにセットします。（自動再生でセッットアップが開始された場合はキャンセルしてください。）</span><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l3 level1 lfo4;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'>(5)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ Ｐゴシック";
+font-weight:normal'>「次の場所で最適のドライバを検索する」－「次の場所を含める」にチェックを入れて、“<span lang=EN-US>C:\Program
+Files\SigmaIDE\SigmaWinPlusJ\Driver\USB”（SigmaWin+ インストール済みの場合のみ）、または“D:\Driver\USB”を指定して［次へ］ボタンを選択します。</span></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;text-indent:25.5pt;mso-line-height-alt:
+0pt'><span lang=EN-US style='font-family:"ＭＳ ゴシック"'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1030" type="#_x0000_t75" style='width:316.5pt;height:199.5pt'
+ o:allowoverlap="f">
+ <v:imagedata src="./Readme_JPN.files/image011.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=422 height=266
+src="./Readme_JPN.files/image012.jpg" v:shapes="_x0000_i1030"><![endif]></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l3 level1 lfo4;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'>(6)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ Ｐゴシック";
+font-weight:normal'>必要なファイルのコピーが始まりますので、終了するまでしばらくお待ちください。</span><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;text-indent:25.5pt;mso-line-height-alt:
+0pt'><span lang=EN-US style='font-family:"ＭＳ ゴシック"'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1031" type="#_x0000_t75" style='width:316.5pt;height:199.5pt'
+ o:allowoverlap="f">
+ <v:imagedata src="./Readme_JPN.files/image013.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=422 height=266
+src="./Readme_JPN.files/image014.jpg" v:shapes="_x0000_i1031"><![endif]></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l3 level1 lfo4;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'>(7)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ Ｐゴシック";
+font-weight:normal'>コピーが終了したら，インストールの完了が通知されますので<span lang=EN-US>[完了]ボタンを選択します。</span></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l3 level1 lfo4;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'>(8)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ Ｐゴシック";
+font-weight:normal'>これでドライバのインストールは終了しました。</span><span lang=EN-US
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<p class=MsoHeading9 style='margin-top:0mm;margin-right:36.0pt;margin-bottom:
+0mm;margin-left:0mm;margin-bottom:.0001pt;mso-line-height-alt:0pt'><span
+lang=EN-US style='font-family:"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ Ｐゴシック"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<span lang=EN-US style='font-size:12.0pt;font-family:"ＭＳ Ｐゴシック";mso-bidi-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:JA;mso-bidi-language:
+AR-SA'><br clear=all style='mso-special-character:line-break;page-break-before:
+always'>
+</span>
+
+<p class=6 style='margin:0mm;margin-bottom:.0001pt;text-align:justify;
+text-justify:inter-ideograph;mso-line-height-alt:0pt'><span lang=EN-US
+style='font-family:"ＭＳ ゴシック"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<h4 style='margin:0mm;margin-bottom:.0001pt;mso-line-height-alt:0pt'><a
+name="_■_Windows2000_/"></a><a name="_■_Windows2000にインストールする場合"></a><span
+style='font-size:10.5pt;mso-bidi-font-size:10.0pt;font-family:"ＭＳ ゴシック";
+mso-bidi-font-family:"ＭＳ Ｐゴシック";color:blue'>■ <span lang=EN-US>Windows2000にインストールする場合</span></span><span
+lang=EN-US style='font-size:10.5pt;mso-bidi-font-size:12.0pt;font-family:"ＭＳ ゴシック";
+mso-bidi-font-family:"ＭＳ Ｐゴシック";color:blue'><o:p></o:p></span></h4>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l4 level1 lfo6;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ Ｐゴシック";
+font-weight:normal'>(1)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-size:10.0pt;font-family:"ＭＳ ゴシック";
+mso-bidi-font-family:"ＭＳ Ｐゴシック";font-weight:normal'>パソコンを立ち上げ<span lang=EN-US>
+Windows2000を起動します。<o:p></o:p></span></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l4 level1 lfo6;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'>(2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ Ｐゴシック";
+font-weight:normal'>サーボパックとパソコンを<span lang=EN-US>USBケーブルで接続して、サーボパックの電源をオンします。</span></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l4 level1 lfo6;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'>(3)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ Ｐゴシック";
+font-weight:normal'>「新しいハードウェアの検出ウィザード」が表示されたら，<span lang=EN-US>[次へ]ボタンを選択します。&nbsp;</span></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;text-indent:25.5pt;mso-line-height-alt:
+0pt'><span lang=EN-US style='font-family:"ＭＳ ゴシック"'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1032" type="#_x0000_t75" style='width:316.5pt;height:195pt'
+ o:allowoverlap="f">
+ <v:imagedata src="./Readme_JPN.files/image015.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=422 height=260
+src="./Readme_JPN.files/image016.jpg" v:shapes="_x0000_i1032"><![endif]></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l4 level1 lfo6;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'>(4)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ Ｐゴシック";
+font-weight:normal'>「デバイスに最適なドライバを検索する<span lang=EN-US>(推奨)」が指定されていることを確認して，[次へ]ボタンを選択します。&nbsp;&nbsp;</span></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;text-indent:25.5pt;mso-line-height-alt:
+0pt'><span lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1033" type="#_x0000_t75"
+ style='width:316.5pt;height:195pt' o:allowoverlap="f">
+ <v:imagedata src="./Readme_JPN.files/image017.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=422 height=260
+src="./Readme_JPN.files/image018.jpg" v:shapes="_x0000_i1033"><![endif]></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l4 level1 lfo6;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'>(5)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ Ｐゴシック";
+font-weight:normal'>「場所を指定」にチェックを入れて<span lang=EN-US>,[次へ]ボタンを選択します。</span></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;text-indent:25.5pt;mso-line-height-alt:
+0pt'><span lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1034" type="#_x0000_t75"
+ style='width:325.5pt;height:201pt' o:allowoverlap="f">
+ <v:imagedata src="./Readme_JPN.files/image019.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=434 height=268
+src="./Readme_JPN.files/image020.jpg" v:shapes="_x0000_i1034"><![endif]></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l4 level1 lfo6;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'>(6)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ Ｐゴシック";
+font-weight:normal'>インストール<span lang=EN-US>CDのパスを指定します。“C:\Program Files\SigmaIDE\SigmaWinPlusJ\Driver\USB”（SigmaWin+
+インストール済みの場合のみ）、または“D:\Driver\USB”を指定して[OK]ボタンを選択します。</span></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;text-indent:25.5pt;mso-line-height-alt:
+0pt'><span lang=EN-US style='font-family:"ＭＳ ゴシック"'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1035" type="#_x0000_t75" style='width:325.5pt;height:134.25pt'
+ o:allowoverlap="f">
+ <v:imagedata src="./Readme_JPN.files/image021.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=434 height=179
+src="./Readme_JPN.files/image022.jpg" v:shapes="_x0000_i1035"><![endif]></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l4 level1 lfo6;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'>(7)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ Ｐゴシック";
+font-weight:normal'>インストールするドライバが表示されます。<span lang=EN-US>CpUSB2k.infが表示されている事を確認して，[次へ]ボタンを選択します。</span></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;text-indent:25.5pt;mso-line-height-alt:
+0pt'><span lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1036" type="#_x0000_t75"
+ style='width:325.5pt;height:201pt' o:allowoverlap="f">
+ <v:imagedata src="./Readme_JPN.files/image023.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=434 height=268
+src="./Readme_JPN.files/image024.jpg" v:shapes="_x0000_i1036"><![endif]></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l4 level1 lfo6;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'>(8)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ Ｐゴシック";
+font-weight:normal'>必要なファイルのコピーが始まりますので、終了するまでしばらくお待ちください。</span><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;text-indent:25.5pt;mso-line-height-alt:
+0pt'><span lang=EN-US style='font-family:"ＭＳ ゴシック"'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1037" type="#_x0000_t75" style='width:316.5pt;height:195.75pt'
+ o:allowoverlap="f">
+ <v:imagedata src="./Readme_JPN.files/image025.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=422 height=261
+src="./Readme_JPN.files/image026.jpg" v:shapes="_x0000_i1037"><![endif]></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l4 level1 lfo6;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'>(9)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ Ｐゴシック";
+font-weight:normal'>コピーが終了したら，インストールの完了が通知されますので<span lang=EN-US>[完了]ボタンを選択します。</span></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l4 level1 lfo6;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'>(10)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ Ｐゴシック";
+font-weight:normal'>これでドライバのインストールは終了しました。</span><span lang=EN-US
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;mso-line-height-alt:0pt'><a
+name="_■_Windows98にインストールする場合"></a><span lang=EN-US style='font-size:10.0pt;
+font-family:"ＭＳ ゴシック"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></h6>
+
+<span lang=EN-US style='font-size:12.0pt;font-family:Arial;mso-fareast-font-family:
+"ＭＳ ゴシック";mso-bidi-font-family:"Times New Roman";mso-font-kerning:1.0pt;
+mso-ansi-language:EN-US;mso-fareast-language:JA;mso-bidi-language:AR-SA'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<h1 style='margin-left:18.0pt;text-indent:-18.0pt;mso-list:l2 level1 lfo2;
+tab-stops:list 18.0pt'><a name="_インストール状況の確認"></a><a name="_2.インストール状況の確認"></a><![if !supportLists]><span
+lang=EN-US>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-family:"ＭＳ ゴシック";mso-ascii-font-family:
+Arial;mso-hansi-font-family:Arial'>インストール状況の確認</span></h1>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=6 style='margin:0mm;margin-bottom:.0001pt;mso-line-height-alt:0pt'><span
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ Ｐゴシック"'>サーボパックが<span
+lang=EN-US>USBデバイスとしてシステムに正しく認識されていること，ドライバが正しくインストールされていることを確認します。<o:p></o:p></span></span></p>
+
+<p class=6 style='margin:0mm;margin-bottom:.0001pt;mso-line-height-alt:0pt'><span
+lang=EN-US style='font-family:"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ Ｐゴシック"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l0 level1 lfo8;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'>(1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ Ｐゴシック";
+font-weight:normal'>タスクバーの「スタート」ボタンから「設定」－「コントロールパネル」を選択します。</span><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l0 level1 lfo8;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'>(2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ Ｐゴシック";
+font-weight:normal'>「システム」アイコンをダブルクリックします。</span><span lang=EN-US
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l0 level1 lfo8;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'>(3)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ Ｐゴシック";
+font-weight:normal'>「システムのプロパティ」ダイアログが表示されますので，「ハードウェア」タブコントロールを選択し、「デバイスマネージャ（<span
+lang=EN-US>D）」ボタンをクリックします。</span></span><span lang=EN-US style='font-size:10.0pt;
+font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;text-indent:25.5pt;mso-line-height-alt:
+0pt'><span lang=EN-US style='font-family:"ＭＳ ゴシック"'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1038" type="#_x0000_t75" style='width:316.5pt;height:223.5pt'
+ o:allowoverlap="f">
+ <v:imagedata src="./Readme_JPN.files/image027.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=422 height=298
+src="./Readme_JPN.files/image028.jpg" v:shapes="_x0000_i1038"><![endif]></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l0 level1 lfo8;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'>(4)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ Ｐゴシック";
+font-weight:normal'>“<span lang=EN-US>YASKAWA ELECTRIC CORP. USB Device”の下の“SIGMA
+Series USB Device”をダブルクリックします。<br>
+デバイスの状態が“このデバイスは正常に動作しています。”と表示されていることを確認します。</span></span><span lang=EN-US
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;text-indent:25.5pt;mso-line-height-alt:
+0pt'><span lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1039" type="#_x0000_t75"
+ style='width:325.5pt;height:288.75pt' o:allowoverlap="f">
+ <v:imagedata src="./Readme_JPN.files/image029.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=434 height=385
+src="./Readme_JPN.files/image030.jpg" v:shapes="_x0000_i1039"><![endif]></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;mso-line-height-alt:0pt'><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;mso-line-height-alt:0pt'><span
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ Ｐゴシック";
+font-weight:normal'>ここまで正常に終了すれば、サーボパックを<span lang=EN-US>USB接続で使用することができます。ここまで正常に終了しなかった場合は、インストール作業をもう一度行ってください。<o:p></o:p></span></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;mso-line-height-alt:0pt'><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:
+"ＭＳ Ｐゴシック";font-weight:normal'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></h6>
+
+<span lang=EN-US style='font-size:12.0pt;font-family:Arial;mso-fareast-font-family:
+"ＭＳ ゴシック";mso-bidi-font-family:"Times New Roman";mso-font-kerning:1.0pt;
+mso-ansi-language:EN-US;mso-fareast-language:JA;mso-bidi-language:AR-SA'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<h1 style='margin-left:18.0pt;text-indent:-18.0pt;mso-list:l2 level1 lfo2;
+tab-stops:list 18.0pt'><a name="_デバイスの取り外し"></a><a name="_3.デバイスの取り外し"></a><![if !supportLists]><span
+lang=EN-US>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-family:"ＭＳ ゴシック";mso-ascii-font-family:
+Arial;mso-hansi-font-family:Arial'>デバイスの取り外し</span></h1>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;mso-line-height-alt:0pt'><span
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'>パソコンの電源がオンの時に、パソコン、サーボパックのいずれかの<span
+lang=EN-US>USB コネクタからケーブルを取り外す、または、サーボパックの電源をOFF にすると、Windows2000/XPでは｢デバイスの取り外しの警告｣が表示されることがあります。以下の操作を行い、安全に接続を解除してください。<o:p></o:p></span></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;mso-line-height-alt:0pt'><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l1 level1 lfo10;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'>(1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ Ｐゴシック";
+font-weight:normal'>画面右下のタスクトレイにあるハードウェア取り出し用アイコンをダブルクリックします。</span><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;text-indent:25.5pt;mso-line-height-alt:
+0pt'><span lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1040" type="#_x0000_t75"
+ style='width:82.5pt;height:20.25pt' o:allowoverlap="f">
+ <v:imagedata src="./Readme_JPN.files/image031.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=110 height=27
+src="./Readme_JPN.files/image032.jpg" v:shapes="_x0000_i1040"><![endif]></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l1 level1 lfo10;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'>(2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'>「 ハードウェアデバイス」一覧から「<span
+lang=EN-US>SIGMA Series USB Device」を指定して、[停止]ボタンを選択します。<o:p></o:p></span></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;text-indent:25.5pt;mso-line-height-alt:
+0pt'><span lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1041" type="#_x0000_t75"
+ style='width:316.5pt;height:252pt' o:allowoverlap="f">
+ <v:imagedata src="./Readme_JPN.files/image033.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=422 height=336
+src="./Readme_JPN.files/image034.jpg" v:shapes="_x0000_i1041"><![endif]></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l1 level1 lfo10;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'>(3)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'>「<span
+lang=EN-US>SIGMA Series USB Device」が選択されていることを確認して、[OK]ボタンを選択します。<o:p></o:p></span></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;text-indent:25.5pt;mso-line-height-alt:
+0pt'><span lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1042" type="#_x0000_t75"
+ style='width:316.5pt;height:172.5pt' o:allowoverlap="f">
+ <v:imagedata src="./Readme_JPN.files/image035.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=422 height=230
+src="./Readme_JPN.files/image036.jpg" v:shapes="_x0000_i1042"><![endif]></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l1 level1 lfo10;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ Ｐゴシック";
+font-weight:normal'>(4)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-size:10.0pt;font-family:"ＭＳ ゴシック";
+font-weight:normal'>切断の処理が行われ，「<span lang=EN-US>SIGMA Series USB Deviceを安全に取り外すことができます。」というポップアップ（またはダイアログボックス）が表示されます。この表示が出れば，ケーブルの取り外しおよびサーボパックの電源OFF
+を行ってかまいません。</span></span><span lang=EN-US style='font-size:10.0pt;font-family:
+"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ Ｐゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;mso-line-height-alt:0pt'><span
+lang=EN-US style='font-size:10.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:
+"ＭＳ Ｐゴシック";font-weight:normal'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></h6>
+
+</div>
+
+</body>
+
+</html>

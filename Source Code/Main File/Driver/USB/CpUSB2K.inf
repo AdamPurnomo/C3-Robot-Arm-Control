@@ -1,0 +1,109 @@
+;
+; CpUSB setup INF file
+;
+; Copyright (c) YASKAWA ELECTRIC CORPORATION.  All rights reserved.
+;
+; Abstract:
+;	CPUSB driver for Windows 2000,XP,Vista,7
+;
+[Version]
+Signature	= "$WINDOWS NT$"
+Class=USB
+ClassGUID={36fc9e60-c465-11cf-8056-444553540000} 
+provider=%YASKAWA%
+CatalogFile=cpusb.cat
+
+; ドライバのバージョン情報
+DriverVer=06/07/2011,1.0.2.0
+
+[ClassInstall32]
+Addreg=USBClassReg
+
+[USBClassReg]
+HKR,,,,%CpUSBClassName%
+HKR,,Icon,,-20
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+[Manufacturer]
+%MfgName%	= Yaskawa,NTx86
+
+;新しいデバイスを追加する場合はこの下に追加するデバイスの
+;Vendor ID,Product IDを調べ例にならって記述する。複数行記述可。
+;これに対応して[Strings]セクションも変更すること
+;
+;例
+;   %USB\VID_0627&PID_0002.DeviceDesc%=CpUSB.Dev, USB\VID_0627&PID_0002
+;            ~~~~     ~~~~                                ~~~~     ~~~~
+
+; For Win2K
+[Yaskawa]
+%USB\VID_137C&PID_0220.DeviceDesc%=CpUSB.Dev, USB\VID_137C&PID_0220
+%USB\VID_137C&PID_0250.DeviceDesc%=CpUSB.Dev, USB\VID_137C&PID_0250
+%USB\VID_137C&PID_0401.DeviceDesc%=CpUSB.Dev, USB\VID_137C&PID_0401
+%USB\VID_137C&PID_0100.DeviceDesc%=CpUSB.Dev, USB\VID_137C&PID_0100
+
+; For XP and later
+[Yaskawa.NTx86]
+%USB\VID_137C&PID_0220.DeviceDesc%=CpUSB.Dev, USB\VID_137C&PID_0220
+%USB\VID_137C&PID_0250.DeviceDesc%=CpUSB.Dev, USB\VID_137C&PID_0250
+%USB\VID_137C&PID_0401.DeviceDesc%=CpUSB.Dev, USB\VID_137C&PID_0401
+%USB\VID_137C&PID_0100.DeviceDesc%=CpUSB.Dev, USB\VID_137C&PID_0100
+
+[CpUSB.Dev.NT]
+CopyFiles=CpUSB.Files.Ext
+
+[CpUSB.Dev.NT.Services]
+Addservice = CpUSB, 0x00000002, CpUSB.AddService
+
+[CpUSB.AddService]
+DisplayName    = %CpUSB.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\CpUSB.sys
+AddReg         =CpUSB.AddReg
+LoadOrderGroup = Base
+
+[CpUSB.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,CpUSB.sys
+
+
+;MaxTransferSizeの値を変更する場合は次の４行のようにして
+;値を設定する。
+;[CpUSB.Dev.NT.HW]
+;AddReg=CpUSB.AddReg.HW
+;
+;[CpUSB.AddReg.HW]
+;HKR,,"MaxTransferSize",0x00010001,0x40000
+;                                  ~~~~~~~~ここに値を書く
+
+[CpUSB.Files.Ext]
+CpUSB.sys
+
+[SourceDisksNames.x86]
+1=%Disk_Description%,,,
+
+[SourceDisksFiles]
+CpUSB.sys = 1
+
+;---------------------------------------------------------------;
+
+[Strings]
+Disk_Description	= "YASKAWA ELECTRIC CORPORATION USB Driver Installation Disk"
+YASKAWA="YASKAWA ELECTRIC CORPORATION"
+MfgName="YASKAWA ELECTRIC CORPORATION"
+CpUSB.SvcDesc="USB Driver for CpUSB"
+CpUSBClassName="YASKAWA ELECTRIC CORP. USB Device"
+
+;
+;デバイスを追加したら、ここにそのデバイスの名前を記述すること
+;例
+; USB\VID_0627&PID_0002.DeviceDesc="MP2200 CPU-02"
+;
+USB\VID_137C&PID_0220.DeviceDesc="MP Series USB Device"
+USB\VID_137C&PID_0250.DeviceDesc="SIGMA Series USB Device"
+USB\VID_137C&PID_0401.DeviceDesc="AC Drive Series USB Device"
+USB\VID_137C&PID_0100.DeviceDesc="MV Drive Series USB Device"

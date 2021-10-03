@@ -1,0 +1,1083 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=shift_jis">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./Readme_ENG.files/filelist.xml">
+<link rel=Edit-Time-Data href="./Readme_ENG.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>SERVOPACK USB Driver Installation</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>（電技C3）</o:Author>
+  <o:LastAuthor>安川電機</o:LastAuthor>
+  <o:Revision>30</o:Revision>
+  <o:TotalTime>952</o:TotalTime>
+  <o:Created>2007-05-18T02:22:00Z</o:Created>
+  <o:LastSaved>2010-11-18T08:35:00Z</o:LastSaved>
+  <o:Pages>12</o:Pages>
+  <o:Words>811</o:Words>
+  <o:Characters>4623</o:Characters>
+  <o:Company>（株）安川電機</o:Company>
+  <o:Lines>38</o:Lines>
+  <o:Paragraphs>9</o:Paragraphs>
+  <o:CharactersWithSpaces>5677</o:CharactersWithSpaces>
+  <o:Version>9.3821</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:PunctuationKerning/>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:"ＭＳ 明朝";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	mso-font-alt:"MS Mincho";
+	mso-font-charset:128;
+	mso-generic-font-family:roman;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+@font-face
+	{font-family:"ＭＳ ゴシック";
+	panose-1:2 11 6 9 7 2 5 8 2 4;
+	mso-font-alt:"MS Gothic";
+	mso-font-charset:128;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+@font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:"ＭＳ Ｐゴシック";
+	panose-1:2 11 6 0 7 2 5 8 2 4;
+	mso-font-charset:128;
+	mso-generic-font-family:modern;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+@font-face
+	{font-family:"\@ＭＳ ゴシック";
+	panose-1:2 11 6 9 7 2 5 8 2 4;
+	mso-font-charset:128;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+@font-face
+	{font-family:"\@ＭＳ Ｐゴシック";
+	panose-1:2 11 6 0 7 2 5 8 2 4;
+	mso-font-charset:128;
+	mso-generic-font-family:modern;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+@font-face
+	{font-family:"\@ＭＳ 明朝";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	mso-font-charset:128;
+	mso-generic-font-family:roman;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Century;
+	mso-fareast-font-family:"ＭＳ 明朝";
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+h1
+	{mso-style-next:標準;
+	margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"ＭＳ ゴシック";
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:normal;}
+h4
+	{margin-right:0mm;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0mm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:"ＭＳ Ｐゴシック";
+	font-weight:bold;}
+h6
+	{margin-right:0mm;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0mm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:6;
+	font-size:7.5pt;
+	font-family:"ＭＳ 明朝";
+	font-weight:bold;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{margin-right:0mm;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0mm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:9;
+	font-size:12.0pt;
+	font-family:"ＭＳ Ｐゴシック";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	tab-stops:center 212.6pt right 425.2pt;
+	layout-grid-mode:char;
+	font-size:10.5pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Century;
+	mso-fareast-font-family:"ＭＳ 明朝";
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	tab-stops:center 212.6pt right 425.2pt;
+	layout-grid-mode:char;
+	font-size:10.5pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Century;
+	mso-fareast-font-family:"ＭＳ 明朝";
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-line-height-alt:0pt;
+	mso-pagination:none;
+	font-size:13.5pt;
+	font-family:Arial;
+	mso-fareast-font-family:"ＭＳ ゴシック";
+	mso-font-kerning:1.0pt;
+	text-decoration:underline;
+	text-underline:single;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{margin-right:0mm;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0mm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"ＭＳ Ｐゴシック";
+	mso-bidi-font-family:"Times New Roman";}
+p.6, li.6, div.6
+	{mso-style-name:6;
+	margin-right:0mm;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0mm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"ＭＳ Ｐゴシック";
+	mso-bidi-font-family:"Times New Roman";}
+ /* Page Definitions */
+@page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:99.25pt 30.0mm 30.0mm 30.0mm;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:18.0pt;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:186255525;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1782557926 -1714260794 67698711 67698705 67698703 67698711 67698705 67698703 67698711 67698705;}
+@list l0:level1
+	{mso-level-text:"\(%1\)";
+	mso-level-tab-stop:25.5pt;
+	mso-level-number-position:left;
+	margin-left:25.5pt;
+	text-indent:-25.5pt;}
+@list l1
+	{mso-list-id:447045738;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1786254752 -1758416516 67698711 67698705 67698703 67698711 67698705 67698703 67698711 67698705;}
+@list l1:level1
+	{mso-level-text:"\(%1\)";
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+@list l2
+	{mso-list-id:1236278794;
+	mso-list-type:hybrid;
+	mso-list-template-ids:996156134 -1714260794 67698711 67698705 67698703 67698711 67698705 67698703 67698711 67698705;}
+@list l2:level1
+	{mso-level-text:"\(%1\)";
+	mso-level-tab-stop:25.5pt;
+	mso-level-number-position:left;
+	margin-left:25.5pt;
+	text-indent:-25.5pt;}
+@list l3
+	{mso-list-id:2010522779;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-317013390 -1714260794 67698711 67698705 67698703 67698711 67698705 67698703 67698711 67698705;}
+@list l3:level1
+	{mso-level-text:"\(%1\)";
+	mso-level-tab-stop:25.5pt;
+	mso-level-number-position:left;
+	margin-left:25.5pt;
+	text-indent:-25.5pt;}
+@list l4
+	{mso-list-id:2019652807;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1152273440 -1519847342 -61855200 67698705 67698703 67698711 67698705 67698703 67698711 67698705;}
+@list l4:level1
+	{mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+@list l4:level2
+	{mso-level-text:"\(%2\)";
+	mso-level-tab-stop:39.0pt;
+	mso-level-number-position:left;
+	margin-left:39.0pt;
+	text-indent:-18.0pt;}
+ol
+	{margin-bottom:0mm;}
+ul
+	{margin-bottom:0mm;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1180"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=JA link=blue vlink=purple style='tab-interval:42.0pt;text-justify-trim:
+punctuation'>
+
+<div class=Section1 style='layout-grid:18.0pt'>
+
+<p class=MsoTitle><span lang=EN-US>USB Driver Installation</span></p>
+
+<p class=MsoNormal style='mso-line-height-alt:0pt'><span lang=EN-US
+style='font-family:"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-line-height-alt:0pt'><span lang=EN-US
+style='font-family:"Times New Roman"'>This section describes how to install the
+USB driver software for SERVOPACK.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-line-height-alt:0pt'><span lang=EN-US
+style='font-family:"Times New Roman"'>The SERVOPACK USB driver cannot be
+installed by using the SigmaWin+ installer.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-line-height-alt:0pt'><span lang=EN-US
+style='font-family:"Times New Roman"'>When a SigmaWin+ equipped PC is connected
+to the SERVOPACK through a USB connection, use the following procedure to
+install the USB driver.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-line-height-alt:0pt'><span lang=EN-US
+style='font-family:"Times New Roman"'>The installation method will vary
+depending on the operating system (hereinafter referred to as OS). Use the
+correct procedure for your OS.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-line-height-alt:0pt'><span lang=EN-US
+style='font-family:"Times New Roman"'>The installation procedure is explained
+assuming that the SigmaWin+ installed folder directory is “C:\Program
+Files\SigmaIDE” and that the CD-ROM drive is D drive. Use the folder directory
+and drive according to the settings of your PC.</span><span lang=EN-US
+style='font-family:"Times New Roman";mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-line-height-alt:0pt'><span lang=EN-US
+style='font-family:"Times New Roman";mso-font-kerning:0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-line-height-alt:0pt;
+mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+style='font-family:Arial;mso-fareast-font-family:"ＭＳ ゴシック"'><a
+href="#_Installing_the_Driver">1.<span style='mso-fareast-font-family:"ＭＳ 明朝";
+mso-font-kerning:0pt'>Installing the Driver</span></a><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-left:42.0pt;text-align:left;
+mso-line-height-alt:0pt;mso-layout-grid-align:none;text-autospace:none'><span
+lang=EN-US style='mso-bidi-font-size:11.0pt;font-family:Arial;mso-font-kerning:
+0pt'><a href="#_For_Windows_7/Vista">For Windows 7/Vista</a><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-left:42.0pt;text-align:left;
+mso-line-height-alt:0pt;mso-layout-grid-align:none;text-autospace:none'><span
+lang=EN-US style='mso-bidi-font-size:11.0pt;font-family:Arial;mso-font-kerning:
+0pt'><a href="#_For_WindowsXP">For Windows XP</a></span><span lang=EN-US
+style='font-family:Arial'><br>
+</span><span lang=EN-US style='mso-bidi-font-size:11.0pt;font-family:Arial;
+mso-font-kerning:0pt'><a href="#_For_Windows2000">For Windows 2000</a></span><span
+lang=EN-US style='mso-bidi-font-size:10.0pt;font-family:Arial;mso-font-kerning:
+0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-line-height-alt:0pt;
+mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+style='font-family:Arial;mso-fareast-font-family:"ＭＳ ゴシック"'><a
+href="#_2._Confirming_the">2.<span style='mso-bidi-font-size:11.0pt;mso-fareast-font-family:
+"ＭＳ 明朝";mso-font-kerning:0pt'>Confirming the Installation Status</span></a></span><span
+lang=EN-US style='mso-bidi-font-size:10.0pt;font-family:Arial;mso-font-kerning:
+0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-line-height-alt:0pt;
+mso-layout-grid-align:none;text-autospace:none'><a
+name="_■_WindowsXPにインストールする場合"></a><a name="_1.ドライバのインストール"></a><a
+name="_1._Installing_the"></a><span lang=EN-US style='font-family:Arial;
+mso-fareast-font-family:"ＭＳ ゴシック"'><a href="#_3._Removing_a">3.<span
+style='mso-fareast-font-family:"ＭＳ 明朝"'>Removing a USB Device</span></a></span><span
+lang=EN-US style='font-size:10.0pt;font-family:Arial;mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-line-height-alt:0pt'><span lang=EN-US
+style='font-family:"Times New Roman";mso-font-kerning:0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-line-height-alt:0pt'><span lang=EN-US
+style='font-family:"Times New Roman";mso-font-kerning:0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<span lang=EN-US style='font-size:12.0pt;font-family:Arial;mso-fareast-font-family:
+"ＭＳ ゴシック";mso-bidi-font-family:"Times New Roman";mso-ansi-language:EN-US;
+mso-fareast-language:JA;mso-bidi-language:AR-SA'><br clear=all
+style='page-break-before:always'>
+</span>
+
+<h1 style='margin-left:18.0pt;text-indent:-18.0pt;mso-list:l4 level1 lfo2;
+tab-stops:list 18.0pt'><a name="_Installing_the_Driver"></a><![if !supportLists]><span
+lang=EN-US>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>Installing the Driver</span></h1>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<h4 style='margin:0mm;margin-bottom:.0001pt;mso-line-height-alt:0pt'><a
+name="_For_Windows_7/Vista"></a><span lang=EN-US style='font-size:10.5pt;
+mso-bidi-font-size:12.0pt;font-family:Arial;color:blue'>For Windows 7/Vista<o:p></o:p></span></h4>
+
+<p class=MsoNormal align=left style='margin-left:18.0pt;text-align:left;
+text-indent:-18.0pt;mso-line-height-alt:0pt;mso-list:l4 level2 lfo2;tab-stops:
+list 18.0pt 39.0pt;mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-font-kerning:0pt'>(1)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";mso-font-kerning:0pt'>Turn on the power to
+the PC to start Windows 7 or Windows Vista.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-left:18.0pt;text-align:left;
+text-indent:-18.0pt;mso-line-height-alt:0pt;mso-list:l4 level2 lfo2;tab-stops:
+list 18.0pt 39.0pt;mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-font-kerning:0pt'>(2)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";mso-font-kerning:0pt'>Connect the
+SERVOPACK to the PC using a USB cable, and then turn on the power to the
+SERVOPACK.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-left:18.0pt;text-align:left;
+text-indent:-18.0pt;mso-line-height-alt:0pt;mso-list:l4 level2 lfo2;tab-stops:
+list 18.0pt 39.0pt;mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-font-kerning:0pt'>(3)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";mso-font-kerning:0pt'>When &quot;No driver
+found&quot; appeared, click Close.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-left:18.0pt;text-align:left;
+mso-line-height-alt:0pt;mso-layout-grid-align:none;text-autospace:none'><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-font-kerning:0pt'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:324.75pt;
+ height:152.25pt'>
+ <v:imagedata src="./Readme_ENG.files/image001.jpg" o:title="1_Driver"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=433 height=203
+src="./Readme_ENG.files/image002.jpg" v:shapes="_x0000_i1025"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-left:18.0pt;text-align:left;
+text-indent:-18.0pt;mso-line-height-alt:0pt;mso-list:l4 level2 lfo2;tab-stops:
+list 18.0pt 39.0pt;mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-font-kerning:0pt'>(4)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";mso-font-kerning:0pt'>Click the Computer,
+Property, and Device Manager.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-left:18.0pt;text-align:left;
+mso-line-height-alt:0pt;mso-layout-grid-align:none;text-autospace:none'><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-font-kerning:0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1026" type="#_x0000_t75"
+ style='width:324pt;height:210.75pt'>
+ <v:imagedata src="./Readme_ENG.files/image003.jpg" o:title="2_DeviceManager"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=432 height=281
+src="./Readme_ENG.files/image004.jpg" v:shapes="_x0000_i1026"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-left:18.0pt;text-align:left;
+text-indent:-18.0pt;mso-line-height-alt:0pt;mso-list:l4 level2 lfo2;tab-stops:
+list 18.0pt 39.0pt;mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-font-kerning:0pt'>(5)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";mso-font-kerning:0pt'>Double-Click
+“YASKAWA SIGMA SERIES”, Click “Update Driver”.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-left:18.0pt;text-align:left;
+text-indent:-18.0pt;mso-line-height-alt:0pt;mso-list:l4 level2 lfo2;tab-stops:
+list 18.0pt 39.0pt;mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-font-kerning:0pt'>(6)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";mso-font-kerning:0pt'>Click “Browse my
+computer for driver software”.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-left:18.0pt;text-align:left;
+text-indent:-18.0pt;mso-line-height-alt:0pt;mso-list:l4 level2 lfo2;tab-stops:
+list 18.0pt 39.0pt;mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-font-kerning:0pt'>(7)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";mso-font-kerning:0pt'>Select the folder “</span><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"ＭＳ ゴシック"'>C:\Program Files\SigmaIDE\SigmaWinPlusJ\Driver\USB”</span><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-font-kerning:0pt'> if the SigmaWin+ has already been installed, select
+“D:\Driver\USB” if it is not yet installed. Select “Include subfolders” and
+then Click Next.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-left:18.0pt;text-align:left;
+mso-line-height-alt:0pt;mso-layout-grid-align:none;text-autospace:none'><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-font-kerning:0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1027" type="#_x0000_t75"
+ style='width:324.75pt;height:237pt'>
+ <v:imagedata src="./Readme_ENG.files/image005.jpg" o:title="4_DriverUpdate"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=433 height=316
+src="./Readme_ENG.files/image006.jpg" v:shapes="_x0000_i1027"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-left:18.0pt;text-align:left;
+text-indent:-18.0pt;mso-line-height-alt:0pt;mso-list:l4 level2 lfo2;tab-stops:
+list 18.0pt 39.0pt;mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-font-kerning:0pt'>(8)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";mso-font-kerning:0pt'>When “Windows
+Security” appeared, Click “Install this driver software anyway”.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-left:18.0pt;text-align:left;
+text-indent:-18.0pt;mso-line-height-alt:0pt;mso-list:l4 level2 lfo2;tab-stops:
+list 18.0pt 39.0pt;mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-font-kerning:0pt'>(9)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";mso-font-kerning:0pt'>The copy of a
+necessary file starts, and wait for a while until finished.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-left:18.0pt;text-align:left;
+text-indent:-18.0pt;mso-line-height-alt:0pt;mso-list:l4 level2 lfo2;tab-stops:
+list 18.0pt 39.0pt;mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-font-kerning:0pt'>(10)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-font-kerning:0pt'>When the installation is completed, click Close.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-left:18.0pt;text-align:left;
+mso-line-height-alt:0pt;mso-layout-grid-align:none;text-autospace:none'><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-font-kerning:0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1028" type="#_x0000_t75"
+ style='width:324pt;height:236.25pt'>
+ <v:imagedata src="./Readme_ENG.files/image007.jpg" o:title="6_UpdateFinish"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=432 height=315
+src="./Readme_ENG.files/image008.jpg" v:shapes="_x0000_i1028"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-left:18.0pt;text-align:left;
+text-indent:-18.0pt;mso-line-height-alt:0pt;mso-list:l4 level2 lfo2;tab-stops:
+list 18.0pt 39.0pt;mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-font-kerning:0pt'>(11)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-font-kerning:0pt'>The driver installation is completed.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-line-height-alt:0pt;
+mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-font-kerning:0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<span lang=EN-US style='font-size:10.5pt;mso-bidi-font-size:12.0pt;font-family:
+Century;mso-fareast-font-family:"ＭＳ 明朝";mso-bidi-font-family:"Times New Roman";
+mso-font-kerning:1.0pt;mso-ansi-language:EN-US;mso-fareast-language:JA;
+mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:line-break;
+page-break-before:always'>
+</span>
+
+<p class=MsoHeader style='tab-stops:42.0pt center 212.6pt right 425.2pt;
+layout-grid-mode:both'><a name="_For_WindowsXP"></a><span lang=EN-US
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<h4 style='margin:0mm;margin-bottom:.0001pt;mso-line-height-alt:0pt'><span
+lang=EN-US style='font-size:10.5pt;mso-bidi-font-size:12.0pt;font-family:Arial;
+color:blue'>For WindowsXP<o:p></o:p></span></h4>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;mso-line-height-alt:
+0pt;mso-list:l1 level1 lfo4;tab-stops:list 18.0pt'><![if !supportLists]><span
+lang=EN-US style='mso-font-kerning:0pt'>(1)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman"'>Turn on the power to the PC to start
+Windows XP.</span><span lang=EN-US style='mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;mso-line-height-alt:
+0pt;mso-list:l1 level1 lfo4;tab-stops:list 18.0pt'><![if !supportLists]><span
+lang=EN-US style='mso-font-kerning:0pt'>(2)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman"'>Connect the SERVOPACK to the PC using a
+USB cable, and then turn on the power to the SERVOPACK. </span><span
+lang=EN-US style='mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;mso-line-height-alt:
+0pt;mso-list:l1 level1 lfo4;tab-stops:list 18.0pt'><![if !supportLists]><span
+lang=EN-US style='mso-font-kerning:0pt'>(3)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman"'>After “The Found New Hardware Wizard” is
+appeared</span><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"ＭＳ 明朝";mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>，</span><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman"'>confirm that the Install from a list or
+specified location [Advanced] option is selected, and then click Next.</span><span
+lang=EN-US style='mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:18.0pt;mso-line-height-alt:0pt'><span
+lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1029" type="#_x0000_t75"
+ style='width:324pt;height:253.5pt' o:allowoverlap="f">
+ <v:imagedata src="./Readme_ENG.files/image009.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=432 height=338
+src="./Readme_ENG.files/image010.jpg" v:shapes="_x0000_i1029"><![endif]></span><span
+lang=EN-US style='mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;mso-line-height-alt:
+0pt;mso-list:l1 level1 lfo4;tab-stops:list 18.0pt'><![if !supportLists]><span
+lang=EN-US style='mso-font-kerning:0pt'>(4)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman"'>Insert the SigmaWin+ installation disk
+into the CD-ROM drive. (If the CD-ROM is automatically started and the
+installation is started, cancel the installation.)</span><span lang=EN-US
+style='mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;mso-line-height-alt:
+0pt;mso-list:l1 level1 lfo4;tab-stops:list 18.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";mso-font-kerning:0pt'>(5)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman"'>Select the Search for the best driver in
+these locations. option and then select the Include this location in the
+search: check box. Click Browse to select the folder “C:\Program
+Files\SigmaIDE\SigmaWinPlus\Driver\USB” if the SigmaWin+ has already been
+installed, or select “D:\Driver\USB” if it is not yet installed.Click Next.</span><span
+lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:18.0pt;mso-line-height-alt:0pt'><span
+lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1030" type="#_x0000_t75"
+ style='width:324pt;height:252.75pt' o:allowoverlap="f">
+ <v:imagedata src="./Readme_ENG.files/image011.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=432 height=337
+src="./Readme_ENG.files/image012.jpg" v:shapes="_x0000_i1030"><![endif]></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;mso-line-height-alt:
+0pt;mso-list:l1 level1 lfo4;tab-stops:list 18.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";mso-font-kerning:0pt'>(6)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman"'>The Wizard starts installation by copying
+the necessary files. Wait until a message appears informing you that the
+installation is finished.</span><span lang=EN-US style='font-size:10.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"ＭＳ ゴシック";mso-font-kerning:
+0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:18.0pt;mso-line-height-alt:0pt'><span
+lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1031" type="#_x0000_t75"
+ style='width:324pt;height:252.75pt' o:allowoverlap="f">
+ <v:imagedata src="./Readme_ENG.files/image013.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=432 height=337
+src="./Readme_ENG.files/image014.jpg" v:shapes="_x0000_i1031"><![endif]></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;mso-line-height-alt:
+0pt;mso-list:l1 level1 lfo4;tab-stops:list 18.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";mso-font-kerning:0pt'>(7)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman"'>When the installation is finished, click
+Finish.</span><span lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;mso-line-height-alt:
+0pt;mso-list:l1 level1 lfo4;tab-stops:list 18.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";mso-font-kerning:0pt'>(8)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;font-family:
+"Times New Roman";mso-fareast-font-family:"ＭＳ ゴシック"'>This completes the driver
+installation.</span><span lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoHeading9 style='margin-top:0mm;margin-right:36.0pt;margin-bottom:
+0mm;margin-left:0mm;margin-bottom:.0001pt;mso-line-height-alt:0pt'><span
+lang=EN-US style='font-family:"Times New Roman";mso-fareast-font-family:"ＭＳ ゴシック"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<span lang=EN-US style='font-size:12.0pt;font-family:"ＭＳ Ｐゴシック";mso-bidi-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:JA;mso-bidi-language:
+AR-SA'><br clear=all style='mso-special-character:line-break;page-break-before:
+always'>
+</span>
+
+<p class=6 style='margin:0mm;margin-bottom:.0001pt;text-align:justify;
+text-justify:inter-ideograph;mso-line-height-alt:0pt'><span lang=EN-US
+style='font-family:"Times New Roman";mso-fareast-font-family:"ＭＳ ゴシック"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<h4 style='margin:0mm;margin-bottom:.0001pt;mso-line-height-alt:0pt'><a
+name="_■_Windows2000_/"></a><a name="_■_Windows2000にインストールする場合"></a><a
+name="_For_Windows2000"></a><span lang=EN-US style='font-size:10.5pt;
+mso-bidi-font-size:10.0pt;font-family:Arial;mso-fareast-font-family:"ＭＳ ゴシック";
+color:blue'>For Windows2000</span><span lang=EN-US style='font-size:10.5pt;
+mso-bidi-font-size:12.0pt;font-family:Arial;mso-fareast-font-family:"ＭＳ ゴシック";
+color:blue'><o:p></o:p></span></h4>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l3 level1 lfo6;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'>(1)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;font-family:
+"Times New Roman";mso-fareast-font-family:"ＭＳ ゴシック";font-weight:normal'>Turn on
+the power to the PC to start Windows 2000.<o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l3 level1 lfo6;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'>(2)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;font-family:
+"Times New Roman";mso-fareast-font-family:"ＭＳ ゴシック";font-weight:normal'>Connect
+the SERVOPACK to the PC using a USB cable, and then turn on the power to the
+SERVOPACK.<o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l3 level1 lfo6;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'>(3)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;font-family:
+"Times New Roman";mso-fareast-font-family:"ＭＳ ゴシック";font-weight:normal'>After
+&quot;The Found New Hardware Wizard” is appeared</span><span style='font-size:
+10.0pt;font-family:"ＭＳ ゴシック";mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";font-weight:normal'>，</span><span
+lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'>click Next.&nbsp;<o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;text-indent:25.5pt;mso-line-height-alt:
+0pt'><span lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1032" type="#_x0000_t75"
+ style='width:316.5pt;height:242.25pt' o:allowoverlap="f">
+ <v:imagedata src="./Readme_ENG.files/image015.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=422 height=323
+src="./Readme_ENG.files/image016.jpg" v:shapes="_x0000_i1032"><![endif]></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l3 level1 lfo6;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'>(4)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;font-family:
+"Times New Roman";mso-fareast-font-family:"ＭＳ ゴシック";font-weight:normal'>Confirm
+that the Search for a suitable driver for my device [recommended] option is
+selected, and then click Next.<o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;text-indent:25.5pt;mso-line-height-alt:
+0pt'><span lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1033" type="#_x0000_t75"
+ style='width:316.5pt;height:242.25pt' o:allowoverlap="f">
+ <v:imagedata src="./Readme_ENG.files/image017.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=422 height=323
+src="./Readme_ENG.files/image018.jpg" v:shapes="_x0000_i1033"><![endif]></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l3 level1 lfo6;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'>(5)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;font-family:
+"Times New Roman";mso-fareast-font-family:"ＭＳ ゴシック";font-weight:normal'>Select
+the Specify a location check box, and then click Next. <o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;text-indent:25.5pt;mso-line-height-alt:
+0pt'><span lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1034" type="#_x0000_t75"
+ style='width:316.5pt;height:242.25pt' o:allowoverlap="f">
+ <v:imagedata src="./Readme_ENG.files/image019.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=422 height=323
+src="./Readme_ENG.files/image020.jpg" v:shapes="_x0000_i1034"><![endif]></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l3 level1 lfo6;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'>(6)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;font-family:
+"Times New Roman";mso-fareast-font-family:"ＭＳ ゴシック";font-weight:normal'>To
+specify the path for the installation CD, click Browse. Select &quot;C:\Program
+Files\SigmaIDE\SigmaWinPlus\Driver\USB &quot; if the SigmaWin+ has already been
+installed, or select &quot;D:\Driver\USB &quot; if it is not yet installed.
+Click OK<o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;text-indent:25.5pt;mso-line-height-alt:
+0pt'><span lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1035" type="#_x0000_t75"
+ style='width:316.5pt;height:163.5pt' o:allowoverlap="f">
+ <v:imagedata src="./Readme_ENG.files/image021.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=422 height=218
+src="./Readme_ENG.files/image022.jpg" v:shapes="_x0000_i1035"><![endif]></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l3 level1 lfo6;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'>(7)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;font-family:
+"Times New Roman";mso-fareast-font-family:"ＭＳ ゴシック";font-weight:normal'>Confirm
+that &quot;cpusb2k.inf&quot; is displayed as the driver to be installed. Click
+Next.<o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;text-indent:25.5pt;mso-line-height-alt:
+0pt'><span lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1036" type="#_x0000_t75"
+ style='width:316.5pt;height:242.25pt' o:allowoverlap="f">
+ <v:imagedata src="./Readme_ENG.files/image023.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=422 height=323
+src="./Readme_ENG.files/image024.jpg" v:shapes="_x0000_i1036"><![endif]></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l3 level1 lfo6;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'>(8)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;font-family:
+"Times New Roman";mso-fareast-font-family:"ＭＳ ゴシック";font-weight:normal'>The
+Wizard starts installation by copying the necessary files. Wait until a message
+appears informing you that the installation is finished.<o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;text-indent:25.5pt;mso-line-height-alt:
+0pt'><span lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1037" type="#_x0000_t75"
+ style='width:316.5pt;height:242.25pt' o:allowoverlap="f">
+ <v:imagedata src="./Readme_ENG.files/image025.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=422 height=323
+src="./Readme_ENG.files/image026.jpg" v:shapes="_x0000_i1037"><![endif]></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l3 level1 lfo6;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'>(9)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;font-family:
+"Times New Roman";mso-fareast-font-family:"ＭＳ ゴシック";font-weight:normal'>When
+the installation is finished, click Finish.<o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l3 level1 lfo6;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'>(10)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;font-family:
+"Times New Roman";mso-fareast-font-family:"ＭＳ ゴシック";font-weight:normal'>This
+completes the driver installation.<o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;mso-line-height-alt:0pt'><a
+name="_■_Windows98にインストールする場合"></a><span lang=EN-US style='font-size:10.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"ＭＳ ゴシック"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></h6>
+
+<span lang=EN-US style='font-size:12.0pt;font-family:Arial;mso-fareast-font-family:
+"ＭＳ ゴシック";mso-bidi-font-family:"Times New Roman";mso-font-kerning:1.0pt;
+mso-ansi-language:EN-US;mso-fareast-language:JA;mso-bidi-language:AR-SA'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<h1 style='margin-left:18.0pt;text-indent:-18.0pt;mso-list:l4 level1 lfo2;
+tab-stops:list 18.0pt'><a name="_2.インストール状況の確認"></a><a name="_2._Confirming_the"></a><![if !supportLists]><span
+lang=EN-US style='mso-bidi-font-family:Arial'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='mso-bidi-font-family:Arial'>Confirming
+the Installation Status<o:p></o:p></span></h1>
+
+<p class=6 style='margin:0mm;margin-bottom:.0001pt;mso-line-height-alt:0pt'><span
+lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=6 style='margin:0mm;margin-bottom:.0001pt;mso-line-height-alt:0pt'><span
+lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック"'>Use the following procedure to make sure that the system recognizes
+the SERVOPACK as a USB device and that the USB driver is installed correctly.<o:p></o:p></span></p>
+
+<p class=6 style='margin:0mm;margin-bottom:.0001pt;mso-line-height-alt:0pt'><span
+lang=EN-US style='font-family:"Times New Roman";mso-fareast-font-family:"ＭＳ ゴシック"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l0 level1 lfo8;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'>(1)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;font-family:
+"Times New Roman";mso-fareast-font-family:"ＭＳ ゴシック";font-weight:normal'>Click
+the Start button, point to Settings, and click Control Panel.<o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l0 level1 lfo8;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'>(2)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;font-family:
+"Times New Roman";mso-fareast-font-family:"ＭＳ ゴシック";font-weight:normal'>Double-click
+the System icon. The System Properties window will appear.<o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l0 level1 lfo8;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'>(3)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;font-family:
+"Times New Roman";mso-fareast-font-family:"ＭＳ ゴシック";font-weight:normal'>Click
+the Hardware tab and then click Device Manager. The Device Manager window will
+appear.<o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;text-indent:25.5pt;mso-line-height-alt:
+0pt'><span lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1038" type="#_x0000_t75"
+ style='width:316.5pt;height:222.75pt' o:allowoverlap="f">
+ <v:imagedata src="./Readme_ENG.files/image027.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=422 height=297
+src="./Readme_ENG.files/image028.jpg" v:shapes="_x0000_i1038"><![endif]></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l0 level1 lfo8;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'>(4)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;font-family:
+"Times New Roman";mso-fareast-font-family:"ＭＳ ゴシック";font-weight:normal'>Double-click
+SIGMA Series USB Device in the YASKAWA ELECTRIC CORP. USB Device folder. The
+SIGMA Series USB Device Properties window will appear.<br>
+Make sure &quot;This device is working properly.&quot; is displayed in the
+Device status field.<o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;text-indent:25.5pt;mso-line-height-alt:
+0pt'><span lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1039" type="#_x0000_t75"
+ style='width:303pt;height:336pt' o:allowoverlap="f">
+ <v:imagedata src="./Readme_ENG.files/image029.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=404 height=448
+src="./Readme_ENG.files/image030.jpg" v:shapes="_x0000_i1039"><![endif]></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;mso-line-height-alt:0pt'><span
+lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;mso-line-height-alt:0pt'><span
+lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'>When &quot;This device is working properly.&quot;
+is displayed, the SERVOPACK is ready to be used through a USB connection. If it
+is not displayed, reinstall the USB driver.<o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;mso-line-height-alt:0pt'><span
+lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></h6>
+
+<span lang=EN-US style='font-size:12.0pt;font-family:Arial;mso-fareast-font-family:
+"ＭＳ ゴシック";mso-bidi-font-family:"Times New Roman";mso-font-kerning:1.0pt;
+mso-ansi-language:EN-US;mso-fareast-language:JA;mso-bidi-language:AR-SA'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<h1 style='margin-left:18.0pt;text-indent:-18.0pt;mso-list:l4 level1 lfo2;
+tab-stops:list 18.0pt'><a name="_3.デバイスの取り外し"></a><a name="_3._Removing_a"></a><![if !supportLists]><span
+lang=EN-US style='mso-bidi-font-family:Arial'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='mso-bidi-font-family:Arial'>Removing
+a USB Device<o:p></o:p></span></h1>
+
+<h6 style='mso-line-height-alt:0pt'><span lang=EN-US style='font-size:10.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"ＭＳ ゴシック";font-weight:
+normal'>While the power supply to the PC is on, remove the USB cable from the
+USB port on either the PC or the SERVOPACK. Or, turn off the power to the
+SERVOPACK. On the screen of</span><span style='font-size:10.0pt;font-family:
+"ＭＳ ゴシック";mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+font-weight:normal'>　</span><span lang=EN-US style='font-size:10.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"ＭＳ ゴシック";font-weight:
+normal'>Windows 2000 or XP, an external device disconnection confirmation will
+appear. Safely remove the device using the following procedure.<o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;mso-line-height-alt:0pt'><span
+lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l2 level1 lfo10;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'>(1)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;font-family:
+"Times New Roman";mso-fareast-font-family:"ＭＳ ゴシック";font-weight:normal'>Double-click
+the Safely Remove Hardware icon in the taskbar in the bottom right corner.<o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;text-indent:25.5pt;mso-line-height-alt:
+0pt'><span lang=EN-US style='font-family:"Times New Roman"'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1040" type="#_x0000_t75" style='width:82.5pt;height:20.25pt'
+ o:allowoverlap="f">
+ <v:imagedata src="./Readme_ENG.files/image031.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=110 height=27
+src="./Readme_ENG.files/image032.jpg" v:shapes="_x0000_i1040"><![endif]></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l2 level1 lfo10;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'>(2)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;font-family:
+"Times New Roman";mso-fareast-font-family:"ＭＳ ゴシック";font-weight:normal'>Select
+&quot;SIGMA Series USB Device&quot; in the Hardware devices: field, and then
+click Stop.<o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;text-indent:25.5pt;mso-line-height-alt:
+0pt'><span lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1041" type="#_x0000_t75"
+ style='width:316.5pt;height:316.5pt' o:allowoverlap="f">
+ <v:imagedata src="./Readme_ENG.files/image033.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=422 height=422
+src="./Readme_ENG.files/image034.jpg" v:shapes="_x0000_i1041"><![endif]></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l2 level1 lfo10;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'>(3)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;font-family:
+"Times New Roman";mso-fareast-font-family:"ＭＳ ゴシック";font-weight:normal'>Confirm
+that the &quot;SIGMA Series USB Device&quot; is selected, and then click OK.<o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;text-indent:25.5pt;mso-line-height-alt:
+0pt'><span lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1042" type="#_x0000_t75"
+ style='width:292.5pt;height:199.5pt' o:allowoverlap="f">
+ <v:imagedata src="./Readme_ENG.files/image035.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=390 height=266
+src="./Readme_ENG.files/image036.jpg" v:shapes="_x0000_i1042"><![endif]></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'><o:p></o:p></span></h6>
+
+<h6 style='margin-top:0mm;margin-right:0mm;margin-bottom:0mm;margin-left:25.5pt;
+margin-bottom:.0001pt;text-indent:-25.5pt;mso-line-height-alt:0pt;mso-list:
+l2 level1 lfo10;tab-stops:list 25.5pt'><![if !supportLists]><span lang=EN-US
+style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'>(4)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;font-family:
+"Times New Roman";mso-fareast-font-family:"ＭＳ ゴシック";font-weight:normal'>The
+processing to remove the selected device will be carried out and a message will
+appear informing you that the device can be safely removed. The cable can then
+be safely removed or the power to the SERVOPACK can be safely turned off.<o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;mso-line-height-alt:0pt'><span
+lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></h6>
+
+<h6 style='margin:0mm;margin-bottom:.0001pt;mso-line-height-alt:0pt'><span
+lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"ＭＳ ゴシック";font-weight:normal'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></h6>
+
+</div>
+
+</body>
+
+</html>

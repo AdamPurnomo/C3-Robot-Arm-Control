@@ -1,0 +1,3 @@
+x = -(cos(a)*cos(b)*cos(c)*cos(d) - sin(a)*sin(c)*cos(d) - cos(a)*sin(b)*sin(d))*650*cos(e)*sin(f) + (cos(a)*cos(b)*sin(c) + sin(a)*cos(c))*650*sin(e)*sin(f) - (cos(a)*cos(b)*cos(c)*sin(d) - sin(a)*sin(c)*sin(d) + cos(a)*sin(b)*cos(d))*(650*cos(f) + 350) - 400*cos(a)*sin(b) + 100*cos(a)
+y = -(sin(a)*cos(b)*cos(c)*cos(d) + cos(a)*sin(c)*cos(d) - sin(a)*sin(b)*sin(d))*650*cos(e)*sin(f) + (sin(a)*cos(b)*sin(c) - cos(a)*cos(c))*650*sin(e)*sin(f) - (sin(a)*cos(b)*cos(c)*sin(d) + cos(a)*sin(c)*cos(d) + sin(a)*sin(b)*cos(d))*(650*cos(f) + 350) - 400*sin(a)*sin(b) + 100*sin(a)
+z = -(sin(b)*cos(c)*cos(d) + cos(b)*sin(d))*650*cos(e)*cos(f) + 650*sin(b)*sin(c)*sin(e)*sin(f) - (sin(b)*cos(c)cos(d) - cos(b)*cos(d))*(650*cos(f) + 350) + 400*cos(b) + 320

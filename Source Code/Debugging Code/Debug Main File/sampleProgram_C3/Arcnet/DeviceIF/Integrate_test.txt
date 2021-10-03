@@ -1,0 +1,15 @@
+# ./robot
+SRDY c0 error!
+S-RDY check: ERROR
+init error
+DeviceUpdate
+0[s]:SRDY c0 error!
+status error!
+update error
+0.025760, 0.057493, 0.025872, 0.015685, 0.000001, 0.000002, 0.084908,
+1[s]:0.025760, 0.057493, 0.063426, 0.015685, 0.000001, 0.000002, 0.084908,
+2[s]:Bk = 80
+status error!
+update error
+0.025759, 0.057493, 0.063426, 0.015685, 0.000001, 0.000002, 0.084908,
+DeviceFin
